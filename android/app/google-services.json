@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784228817120",
+    "project_id": "medigine-d2faf",
+    "storage_bucket": "medigine-d2faf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784228817120:android:ebf5ecb702386c333a1885",
+        "android_client_info": {
+          "package_name": "com.example.medigine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHu0r6gUh0A_jpG05Jt_sXVfo0ChN4IF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

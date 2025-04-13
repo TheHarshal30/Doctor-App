@@ -1,0 +1,75 @@
+list of dates patient has visited, mark on patient's profile calender,
+
+
+dosage list page
+
+monthly list page
+
+
+upcoming list - oncall/physical and newcase
+
+
+creating tomorrow's oncall and physical meetings list
+
+
+
+
+
+
+
+
+
+
+//tasks
+patient profile saved data update on firebase
+appointment page -- DONE
+home page's today's appointment -> today's schedule --  DONE
+
+
+
+
+/// Whatsapp messages
+Appointment Reminder
+Appointment Missed
+Event invite
+Tracking ID sharing 
+Payment Reminder
+
+
+// Follow-up 
+
+//Print
+Priliminary data / Report printing
+Recipt printing
+
+//password - Already Implemented
+
+// payment list 
+
+
+
+
+// motnhly count on home page
+
+
+
+tests for firebase data calls   
+
+Sr. No.	Date of Enquiry	Name of Patient	Attendant	Age/Gender	Complaints	Residence	Charges Informed Contact Info.	Reference from	Appointment Scheduled on	Consultation	Weekly REMARK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
