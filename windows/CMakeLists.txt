@@ -43,6 +43,15 @@ function(APPLY_STANDARD_SETTINGS TARGET)
   target_compile_options(${TARGET} PRIVATE /EHsc)
   target_compile_definitions(${TARGET} PRIVATE "_HAS_EXCEPTIONS=0")
   target_compile_definitions(${TARGET} PRIVATE "$<$<CONFIG:Debug>:_DEBUG>")
+  
+  # Set MSVC runtime library to MultiThreadedDLL to match Firebase libraries
+  if(MSVC)
+    target_compile_options(${TARGET} PRIVATE 
+      $<$<CONFIG:Debug>:/MDd>    # Multi-threaded Debug DLL
+      $<$<CONFIG:Release>:/MD>   # Multi-threaded DLL
+      $<$<CONFIG:Profile>:/MD>   # Multi-threaded DLL
+    )
+  endif()
 endfunction()
 
 # Flutter library and tool build rules.
@@ -51,7 +60,6 @@ add_subdirectory(${FLUTTER_MANAGED_DIR})
 
 # Application build; see runner/CMakeLists.txt.
 add_subdirectory("runner")
-target_compile_options(runner PRIVATE "/wd4099")
 
 
 # Generated plugin build rules, which manage building the plugins and adding
